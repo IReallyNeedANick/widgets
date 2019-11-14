@@ -1,0 +1,13 @@
+<div>
+  <div>
+    <div style="display: block">
+      <canvas  *ngIf="inputData" baseChart
+              [datasets]="inputData.data"
+              [labels]="inputData.labels"
+              [options]="barChartOptions"
+              [legend]="barChartLegend"
+              [chartType]="barChartType">
+      </canvas>
+    </div>
+  </div>
+</div>

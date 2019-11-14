@@ -1,0 +1,12 @@
+<div class="flex">
+  <div class="flex-item">
+    <div style="display: block;">
+      <canvas  *ngIf="inputData" baseChart width="400" height="400"
+              [datasets]="inputData.data"
+              [labels]="inputData.labels"
+              [options]="lineChartOptions"
+               [colors]="lineChartColors"
+              [chartType]="lineChartType"></canvas>
+    </div>
+  </div>
+</div>

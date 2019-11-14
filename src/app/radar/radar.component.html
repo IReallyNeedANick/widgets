@@ -1,0 +1,12 @@
+<div>
+  <div>
+    <div style="display: block">
+      <canvas *ngIf="inputData" baseChart
+              [datasets]="inputData.data"
+              [options]="radarChartOptions"
+              [labels]="inputData.labels"
+              [chartType]="radarChartType">
+      </canvas>
+    </div>
+  </div>
+</div>
